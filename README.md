@@ -6,6 +6,6 @@ Each row of the data lists a complaint, and the columns include various details 
 The code is divided into 10 different parts/sections, each of which unearths interesting insights from the data. Some of those are mentioned below:
 
 ### Part 1 (Exploratory analyses). Some of the important findings are:
-##### 1. The data has a total of 33358 complaints (rows) against 3996 unique officers, and the oldest complaint goes all the way back to 1985.
-##### 2. 
+1. The data has a total of 33358 complaints (rows) against 3996 unique officers, and the oldest complaint goes all the way back to 1985.
+2. 
 
