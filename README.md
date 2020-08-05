@@ -31,5 +31,12 @@ The code is divided into 10 different parts/sections, each of which unearths int
 1. I've drawn a Sankey diagram to show change between the current rank and the rank at the time of the first incident, for each unique officer. 
 1. Nearly 50% of the officers who were Police Officers at the time of their first complaint, are still Police Officers (many of these could be young officers, so their 
 
+#### Part 6: Does being found guilty of misconduct affect officers' promotion?
+1. For an officer, "promotion" is calculated as the difference between current rank and the rank at the time of the very first complaint against the officer.
+2. A scatter plot of promotion vs average guilty score (calculated by assigning 0 to all complaints where the Board's verdict was unsubstantiated or exonerated and 1 where it was substantiated) suggests that, for a certain year and rank, officers who get promoted higher tend to have lower average guilty score. For example, officers of rank Police Officer who faced their very first complaint in 2005 have, on average, been promoted higher by now in case they have a low average guilty score. However, this isn't a strong correlation and I refrained from performing statistical tests because of too many unknowns.
+
+
+
+
 
 Credits: 
