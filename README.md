@@ -27,14 +27,25 @@ The code is divided into 10 different parts/sections, each of which unearths int
 #### Part 5: Are the youth more likely to file a complaint?
 1. Yes - a histogram shows that 60% complaints come from people between the ages of 14 and 34. Note that this could either be because the officers are more likely to commit abuses against the youth or because the youth are more likely to report abuses, or both.
 
-#### Part 6: Visualize changes in ranks of each of the 3996 officers
-1. I've drawn a Sankey diagram to show change between the current rank and the rank at the time of the first incident, for each unique officer. 
-1. Nearly 50% of the officers who were Police Officers at the time of their first complaint, are still Police Officers (many of these could be young officers, so their 
-
 #### Part 6: Does being found guilty of misconduct affect officers' promotion?
-1. For an officer, "promotion" is calculated as the difference between current rank and the rank at the time of the very first complaint against the officer.
-2. A scatter plot of promotion vs average guilty score (calculated by assigning 0 to all complaints where the Board's verdict was unsubstantiated or exonerated and 1 where it was substantiated) suggests that, for a certain year and rank, officers who get promoted higher tend to have lower average guilty score. For example, officers of rank Police Officer who faced their very first complaint in 2005 have, on average, been promoted higher by now in case they have a low average guilty score. However, this isn't a strong correlation and I refrained from performing statistical tests because of too many unknowns.
+1. For an officer, "promotion" is calculated as the difference between the current rank and the rank at the time of the very first complaint against the officer.
+2. The function takes in two inputs: year and rank, and draws a scatter plot of promotion vs average guilty score (calculated by assigning 0 to all complaints where the Board's verdict was unsubstantiated or exonerated and 1 where it was substantiated). 
+3. The year input acts as the year in which officers faced their first complaint, and rank input acts as the rank of officer at the time of the first complaint. Controlling for year and rank allows an apples-to-apples comparison. For instance, it would not make a lot of sense to compare promotions of officers who faced their first complaint as Lieutenants in 2002, to those who faced their first complaint as Sergeants in 2007.
+4. The scatteplot suggests that, for a certain year and rank, officers who get promoted higher have lower average guilty score (negative correlation). However, this isn't a strong correlation and I refrained from performing statistical tests because of too many unknowns.
 
+#### Part 7: Visualize changes in ranks of each of the 3996 officers
+1. I've drawn a Sankey diagram to show change between the current rank and the rank at the time of the first incident, for each unique officer.
+2. The function takes in as input a certain year (the year in which officers faced their first complaint) and shows their current ranks. The interactive diagram displays the number of officers who got promoted between each pair of rankings, as well as their average guilty score. For instance, the group of officers who moved from being Police Officers in 2005 to Lieutenants now are plotted on this diagram, and their total number and guilty score can be seen by hovering over the diagram.
+
+#### Part 8: Are Black people singled out for certain offences?
+1. It's usually believed that officers are more likely to target Black people for offences such as Stop/Question/Frisk, Vehicle Stop and Check, Report of Disturbance/Noise among others. This doesn't seem to be the case looking at the data, although it's hard to make a conclusive comment because of a preponderance of NaN values for complainant's ethnicity in such offences.
+
+#### Part 9: How often have cops been accused of chokehold/restricting breathing, and by which races?
+1. 265 of 33358 complaints - less than 1% - pertain to chokehold or restricting breathing, and 61% of those are by Black People (their share in overall complaints is 59.2%)
+
+#### Part 10: Does the board's decision depend on the race of the complainant and the officer?
+1. Generally, the Board finds the officer guilty in 1/4 complaints. However, the ratio is 1/8 for American Indian officers (the sample size complaints against American Indian officers is just 32, compared to many more for officers of other ethnicities).
+2. Similarly, the Board is significantly more likely determine guilt in complaints filed by American Indian complainants (again, much fewer number of complaints filed by this group).
 
 
 
