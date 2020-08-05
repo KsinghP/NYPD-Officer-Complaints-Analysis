@@ -51,6 +51,7 @@ The code is divided into 10 different parts/sections, each of which unearths int
 2. Similarly, the Board is significantly more likely determine guilt in complaints filed by American Indian complainants (again, much fewer number of complaints filed by this group).
 
 
+Additionally, the folder "Graphs" contains some of the charts generated from the code
 
 
 
