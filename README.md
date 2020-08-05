@@ -5,7 +5,7 @@ Each row of the data lists a complaint, and the columns include various details 
 
 The code is divided into 10 different parts/sections, each of which unearths interesting insights from the data. Some of those are mentioned below:
 
-### Part 1 (Exploratory analyses). Some of the important findings:
+### Part 1: Exploratory analyses 
 1. The data has a total of 33358 complaints (rows) against 3996 unique officers, and the oldest complaint goes all the way back to 1985.
 2. About 54% of complaints are against White officers, 27% against Hispanic officers and 14% against Black officers
 3. Ignoring the NA values, about 59% of complaints are by Black people, 22% by Hispanic people and 9% by White people
@@ -21,5 +21,13 @@ The code is divided into 10 different parts/sections, each of which unearths int
 1. The top 100 officers - 2.5% of total - with most complaints against them make up 11% of the total complaints.
 2. The interactive bubble chart provides details on each of these 100 officers.
 
-#### Part 4:  Does an officer's ethnicity decide how quickly (or slowly) the board reaches a decision?
-1. A histogram comparing White and Black officers shows that this isn't the case - 
+#### Part 4: Does an officer's ethnicity impact how quickly (or slowly) the Board reaches a decision?
+1. Histograms comparing officers of different shows that this isn't the case - the board reaches a decision on nearly all complaints within 20 months, regardless of the race of the officer
+
+#### Part 5: Are the youth more likely to file a complaint?
+1. Yes - a histogram shows that 60% complaints come from people between the ages of 14 and 34. Note that this could either be because the officers are more likely to commit abuses against the youth or because the youth are more likely to report abuses, or both.
+
+#### Part 6: Visualize changes in ranks of each of the 3996 officers
+1. I've drawn a Sankey diagram to show change between the current rank and the rank at the time of the first incident, for each unique officer. 
+1. Nearly 50% of the officers who were Police Officers at the time of their first complaint, are still Police Officers (many of these could be young officers, so their 
+
