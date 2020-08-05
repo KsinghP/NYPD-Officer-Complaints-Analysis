@@ -47,8 +47,10 @@ The code is divided into 10 different parts/sections, each of which unearths int
 1. 265 of 33358 complaints - less than 1% - pertain to chokehold or restricting breathing, and 61% of those are by Black People (their share in overall complaints is 59.2%)
 
 #### Part 10: Does the board's decision depend on the race of the complainant and the officer?
-1. Generally, the Board finds the officer guilty in 1/4 complaints. However, the ratio is 1/8 for American Indian officers (the sample size complaints against American Indian officers is just 32, compared to many more for officers of other ethnicities).
+1. Generally, the Board finds the officer guilty in 1/4 complaints. However, the ratio is 1/8 for American Indian officers (though the sample size of complaints against American Indian officers is just 32, compared to many more for officers of other ethnicities).
 2. Similarly, the Board is significantly more likely determine guilt in complaints filed by American Indian complainants (again, much fewer number of complaints filed by this group).
+
+
 
 
 
