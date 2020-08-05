@@ -1,21 +1,24 @@
 # NYPD-Officer-Complaints-Analysis
 This project is based on a data set containing complaints filed against currently serving NYPD officers. The source is: https://www.propublica.org/datastore/dataset/civilian-complaints-against-new-york-city-police-officers
 
-Each row of the data lists a complaint, and the columns include various details on officers (name, race, age, gender, month and year of incident, rank at the time of incident, current rank) and complainants (race, age, gender) as well as other details such as reason why the officer made contact, the outcome of contact, and the findings of NYPD's Civilian Complaint Review Board (classified as Unsubstantiated/Exonerated/Substantiated). It's noteworthy that NYPD can choose to ignore the recommendations of the Board.
+Each row of the data lists a complaint, and the columns include various details on officers (name, race, age, gender, month and year of incident, rank at the time of incident, current rank) and complainants (race, age, gender) as well as other details such as the reason why the officer made contact, the outcome of contact, and the findings of NYPD's Civilian Complaint Review Board (classified as Unsubstantiated, Exonerated, or one of the several variations of Substantiated with different punishments recommended). It's noteworthy that NYPD can choose to ignore the recommendations of the Board.
+
+I assigned numerical values to ranks as per their hierarchical order in NYPD, and also to the findings of the Board (0 when the verdict was Unsubstantiated or Exonerated, and 1 when it was any variation of Substantiated). This allows for some interesting analyses.
 
 The code is divided into 10 different parts/sections, each of which unearths interesting insights from the data. Some of those are mentioned below:
 
-### Part 1: Exploratory analyses 
+#### Part 1: Exploratory analyses 
 1. The data has a total of 33358 complaints (rows) against 3996 unique officers, and the oldest complaint goes all the way back to 1985.
 2. About 54% of complaints are against White officers, 27% against Hispanic officers and 14% against Black officers
 3. Ignoring the NA values, about 59% of complaints are by Black people, 22% by Hispanic people and 9% by White people
 4. 2/3rd complaints come against Police Officers - the lowest ranked in the NYPD hierarchy
 5. The disciplinary board either exonerates or fails to substantiate complaint in 75% of cases
 
-### Part 2: Do White cops disproportionately mistreat Black people?
-1. Somewhat counterintuitively, data suggests that this isn't the case. White officers face 58.7% of complaints from Black people, whereas the share of Black people in total complaints is 59.2%.
-2. In fact, among officers of all races, Black people file their highest share of complaints - 66% - against Black officers.
-3. Looking at gender-wise breakup, female officers face 38.7% of complaints from women, and male officers face only 16% of complaints from women.
+#### Part 2: How about White cops-Black people?
+1. Somewhat counterintuitively, a White officer is not more likely than cops of other races to face a complaint by a Black person. White officers face 58.7% of their complaints from Black people, whereas the share of Black people in total complaints is 59.2%. This suggests that things wouldn't change much if there were only White officers in NYPD.
+2. In fact, among officers of all races, Black officers are most likely to face a complaint by a Black person. This proportion is 66%.
+3. Note: This statistic does NOT conclusively suggest that there is no racism by White officers against Black people (or that Black officers are especially harsh on Black people), since that would require data on the total number of contacts made by White (and Black) officers with Black people, among other things.
+4. Looking at gender-wise breakup, female officers face 38.7% of complaints from women, and male officers face only 16% of complaints from women.
 
 #### Part 3: Who are the most errant officers?
 1. The top 100 officers - 2.5% of total - with most complaints against them make up 11% of the total complaints.
@@ -49,5 +52,4 @@ The code is divided into 10 different parts/sections, each of which unearths int
 
 
 
-
-Credits: 
+Credits: https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-ii-interactions-a4cf994e2512 (was crucial to helping me make Bokeh plots)
